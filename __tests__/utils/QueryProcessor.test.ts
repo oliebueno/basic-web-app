@@ -26,4 +26,12 @@ describe("QueryProcessor", () => {
 		"15-10192"
     	));
     });
+
+    test('should return my name', () => {
+        const query = "what is your name?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+        "Oliver"
+        ));
+    });
 });
