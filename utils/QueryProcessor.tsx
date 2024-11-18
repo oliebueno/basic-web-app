@@ -13,7 +13,7 @@ export default function QueryProcessor(query: string): string {
     return ( "15-10192" );
   }
 
-  if (query === "what is your name?") { 
+  if (query === "What is your name?") { 
     return "Oliver"; 
   }
 
