@@ -17,5 +17,15 @@ export default function QueryProcessor(query: string): string {
     return "Oliver"; 
   }
 
+  const additionRegex = /what is (\d+) plus (\d+)/i;
+  const matchAddition = query.match(additionRegex);
+  if (matchAddition) {
+    const num1 = parseInt(matchAddition[1], 10);
+    const num2 = parseInt(matchAddition[2], 10);
+    const result = num1 + num2;
+    return result.toString();
+  }
+
+
   return "";
 }

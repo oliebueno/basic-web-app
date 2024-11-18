@@ -30,4 +30,11 @@ describe("QueryProcessor", () => {
         const response = QueryProcessor(query);
         expect(response).toBe("Oliver");
     });
+
+    test('should return the result of addition', () => {
+        const query = "What is 22 plus 72?";
+        const response = QueryProcessor(query);
+        expect(response).toBe("94");
+    });
+    
 });
